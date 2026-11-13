@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Smooth navigation
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener("click", function(event) {
+
       const targetId = this.getAttribute("href");
 
       if (targetId === "#") return;
@@ -14,9 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (target) {
         event.preventDefault();
+
         target.scrollIntoView({
           behavior: "smooth",
-          block: "start"
+          block: targetId === "#purchase" ? "center" : "start"
         });
       }
     });
