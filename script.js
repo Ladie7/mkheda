@@ -37,12 +37,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Purchase button placeholder
+  // Whop Purchase Link
+  const WHOP_LINK = "https://whop.com/checkout/plan_f6vVHr2D3Dxro";
+
   const purchaseButton = document.getElementById("purchaseButton");
 
-  const WHOP_LINK = "";
-
-  if (purchaseButton && WHOP_LINK) {
+  if (purchaseButton) {
     purchaseButton.href = WHOP_LINK;
   }
 
