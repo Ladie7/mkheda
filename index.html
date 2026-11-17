@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="مخدة - نظام ادرس لتتذكر. طريقة عملية لتنظيم الدراسة والاسترجاع والمراجعة والاختبار.">
+  <meta name="description" content="مخدة - نظام ادرس لتتذكر. نظام دراسي رقمي مدفوع يجمع بين المنهجية والتطبيق والتنظيم.">
   <meta name="theme-color" content="#F8F5EF">
 
   <title>مخدة | MIKHADDA</title>
@@ -13,6 +13,67 @@
 </head>
 
 <body>
+
+<!-- WELCOME POPUP -->
+<div class="welcome-overlay" id="welcomePopup" role="dialog" aria-modal="true" aria-labelledby="welcomeTitle">
+
+  <div class="welcome-box">
+
+    <button class="welcome-close" id="closeWelcome" aria-label="إغلاق">×</button>
+
+    <span class="eyebrow">مرحبًا بك في مخدة 👋</span>
+
+    <h2 id="welcomeTitle">قبل أن تبدأ، هناك أمر مهم.</h2>
+
+    <p class="welcome-intro">
+      نظام «ادرس لتتذكر» هو <strong>نظام رقمي مدفوع</strong>،
+      وليس محتوى مجانيًا. يمكنك الحصول على جميع ملفاته
+      بعد إتمام عملية الشراء.
+    </p>
+
+    <div class="welcome-info">
+      <h3>كيف تحصل على النظام؟</h3>
+
+      <div class="welcome-step">
+        <span>01</span>
+        <p>اضغط على زر شراء النظام.</p>
+      </div>
+
+      <div class="welcome-step">
+        <span>02</span>
+        <p>انتقل إلى صفحة الدفع على Whop.</p>
+      </div>
+
+      <div class="welcome-step">
+        <span>03</span>
+        <p>أكمل عملية الدفع للحصول على المنتج.</p>
+      </div>
+
+      <div class="welcome-step">
+        <span>04</span>
+        <p>احصل على الملفات وروابط الشروحات وابدأ الاستخدام.</p>
+      </div>
+    </div>
+
+    <a
+      href="https://whop.com/checkout/plan_f6vVHr2D3Dxro"
+      class="btn welcome-buy"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      شراء النظام الآن
+    </a>
+
+    <button class="welcome-continue" id="continueBrowsing">
+      أريد تصفح الموقع أولًا
+    </button>
+
+    <p class="welcome-note">
+      مخدة — ادرس لتتذكر، لا لتنسى.
+    </p>
+
+  </div>
+</div>
 
 <header>
   <div class="container">
@@ -26,7 +87,7 @@
         <li><a href="#faq">الأسئلة الشائعة</a></li>
       </ul>
 
-      <a href="#purchase" class="btn">ابدأ الدراسة بذكاء</a>
+      <a href="#purchase" class="btn">احصل على النظام</a>
     </nav>
   </div>
 </header>
@@ -48,11 +109,11 @@
       </p>
 
       <a href="#purchase" class="btn">
-        ابدأ الدراسة بذكاء
+        إبدأ الدراسة بذكاء
       </a>
 
       <p class="sub">
-        نظام رقمي يجمع بين المنهجية والتطبيق والتنظيم.
+        نظام دراسي رقمي مدفوع يجمع بين المنهجية والتطبيق والتنظيم.
       </p>
 
     </div>
@@ -203,8 +264,13 @@
       <div class="faq">
 
         <details>
-          <summary>هل المنتج رقمي أم مادي؟</summary>
-          <p>المنتج رقمي، وستحصل على ملفاته إلكترونيًا بعد إتمام عملية الشراء.</p>
+          <summary>هل النظام رقمي أم مادي؟</summary>
+          <p>النظام رقمي ومدفوع، وستحصل على ملفاته إلكترونيًا بعد إتمام عملية الشراء.</p>
+        </details>
+
+        <details>
+          <summary>هل النظام مجاني؟</summary>
+          <p>لا، نظام ادرس لتتذكر منتج رقمي مدفوع. يمكنك الحصول عليه من خلال زر الشراء الموجود في الموقع.</p>
         </details>
 
         <details>
@@ -236,11 +302,11 @@
     <div class="container">
 
       <div class="cta">
-        <h2>ابدأ بتغيير طريقة دراستك.</h2>
+        <h2>إبدأ الدراسة بذكاء.</h2>
 
         <p>
-          اكتشف نظام ادرس لتتذكر،
-          واختر طريقة أكثر وعيًا للتعلّم.
+          احصل على نظام ادرس لتتذكر،
+          وابدأ باستخدام أدواته وموارده الرقمية.
         </p>
 
         <a
@@ -250,8 +316,12 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          ابدأ الدراسة بذكاء
+          إبدأ الدراسة بذكاء
         </a>
+
+        <p class="sub">
+          نظام رقمي مدفوع — تحصل على الملفات بعد إتمام الشراء.
+        </p>
       </div>
 
     </div>
